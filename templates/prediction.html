@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Medical Care Cost Analysis</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="static/img/medi icon.jpg" rel="icon">
+    <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="static/vendor/aos/aos.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="static/css/style.css" rel="stylesheet">
+  </head>
+  <!-- <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/><title>Medical Cost Prediction</title>
+																	<!-- CSS -->
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link href="../static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/></head>   -->
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+      <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+        <div class="align-items-center d-none d-md-flex">
+          <i class="bi bi-clock"></i> 24/7
+        </div>
+        <div class="d-flex align-items-center">
+          <i class="bi bi-phone"></i> Call us now +91 7397639450
+        </div>
+      </div>
+    </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <!-- <a href="index.html" class="logo me-auto"><img src="static/img/logo.png" alt=""></a> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="logo me-auto">
+          <a href="/">MEDICAL CARE COST ANALYSIS</a>
+        </h1>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+          <ul>
+            <li>
+              <a class="nav-link scrollto " href="/">Home</a>
+            </li>
+            <!-- <li><a class="nav-link scrollto" href="#about">About</a></li><li><a class="nav-link scrollto" href="#dashboard">Dashboard</a></li><li><a class="nav-link scrollto" href="#story">Story</a></li><li><a class="nav-link scrollto" href="#report">Report</a></li> -->
+            <li>
+              <a class="nav-link scrollto" href="/prediction">Prediction</a>
+            </li>
+            <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+        <div class="header-social-links d-flex">
+          <a href="#" class="twitter">
+            <i class="bu bi-twitter"></i>
+          </a>
+          <a href="#" class="facebook">
+            <i class="bu bi-facebook"></i>
+          </a>
+          <a href="#" class="instagram">
+            <i class="bu bi-instagram"></i>
+          </a>
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <a href="#" class="linkedin">
+            <i class="bu bi-linkedin"></i>
+          </a>
+          <!-- <div class="social-links mt-3"><a href="#" class="twitter"><i class="bx bxl-twitter"></i></a><a href="#" class="facebook"><i class="bx bxl-facebook"></i></a><a href="#" class="instagram"><i class="bx bxl-instagram"></i></a><a href="#" class="google-plus"><i class="bx bxl-skype"></i></a><a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a></div> -->
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- <nav class="purple darken-4 accent-3" role="navigation"><div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a><ul class="right hide-on-med-and-down"><li><a href="#">Navbar Link</a></li></ul><ul id="nav-mobile" class="sidenav"><li><a href="#">Navbar Link</a></li></ul><a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a></div></nav> -->
+    <div class="section no-pad-bot" id="index-banner">
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="header center red-text">Medical Cost Prediction</h1>
+        <div class="row center">
+          <h5 class="header col s12 light black-text">Predict the cost for your Medical Insurance! <br>
+          </h5>
+        </div>
+        <form action='/predict' method="post" class="col s12">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group mb-3">
+                <label for="first_name" style="font-size: 20px">
+                  <b>Age</b>
+                </label>
+                <br>
+                <input placeholder="Age" name="age" id="age" type="text" class="form-control validate">
+              </div>
+              <div class="form-group mb-3">
+                <label for="_name" style="font-size: 20px">
+                  <b>Gender</b>
+                </label>
+                <br>
+                <input id="_name" name="Gender" placeholder="0 - Male/1 - Female" type="text" class="form-control validate">
+              </div>
+              <div class="form-group mb-3">
+                <label for="last_name" style="font-size: 20px">
+                  <b>BMI</b>
+                </label>
+                <br>
+                <input id="bmi" name="bmi" placeholder="BMI" type="text" class="form-control validate">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group mb-3">
+                <label for="last_name" style="font-size: 20px">
+                  <b>Childrens</b>
+                </label>
+                <br>
+                <input id="children" name="children" placeholder="0 for None" type="text" class="form-control validate">
+              </div>
+              <div class="form-group mb-3">
+                <label for="smoker" style="font-size: 20px">
+                  <b>Do you Smoke?</b>
+                </label>
+                <br>
+                <input id="smoker" name="smoker" placeholder="1 - Yes/0 - No" type="text" class="form-control validate">
+              </div>
+              <div class="form-group mb-3">
+                <label for="region" style="font-size: 20px">
+                  <b>Which Region?</b>
+                </label>
+                <br>
+                <input id="region" name="region" placeholder="0-NW/1-NE/2-SE/3-SW" type="text" class="form-control validate">
+              </div> 
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-lg btn-primary">Predict Probalility</button>
+          </div>
+        </form>
+
+        </div>
+        <div class="section no-pad-bot" id="index-banner">
+          <div class="container">
+              <br><br>
+              <!-- <h3 class="header red-text"> </h3> -->
+              <h3 style="text-align:center">{{pred}}</h3>
+          </div>
+      </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Medical Care Cost Analysis</h3>
+                <p>
+                  <strong>Phone:</strong> +91 7397639450 <br>
+                  <strong>Email:</strong> medicalcarecostanalysis@gmail.com <br>
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter">
+                    <i class="bx bxl-twitter"></i>
+                  </a>
+                  <a href="#" class="facebook">
+                    <i class="bx bxl-facebook"></i>
+                  </a>
+                  <a href="#" class="instagram">
+                    <i class="bx bxl-instagram"></i>
+                  </a>
+                  <a href="#" class="google-plus">
+                    <i class="bx bxl-skype"></i>
+                  </a>
+                  <a href="#" class="linkedin">
+                    <i class="bx bxl-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Dashboard</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Story</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Report</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Data Analysis and Research</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Cost Estimation and Prediction</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Product Management</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Obesity Prevention Strategies</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Public Engagement and Education</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Stay Informed with Our Newsletter</h4>
+              <p>Join our mailing list to receive the latest updates, research findings, and insights directly in your inbox. Stay informed about the intersection of health, finance, and wellness.</p>
+              <form action="" method="post">
+                <input type="email" name="email">
+                <input type="submit" value="Subscribe">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright"> &copy; Copyright <strong>
+            <span>Medical Care Cost Analysis</span>
+          </strong>. All Rights Reserved </div>
+        <div class="credits"> Designed by <a href="linkedin.com/in/bharathvaj-saravanan-ab21001b4">Bharathvaj S</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- <footer class="page-footer light-blue lighten-1"><div class="container"><div class="row"><div class="col l6 s12"><h5 class="white-text">Company Bio</h5><p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p></div><div class="col l3 s12"><h5 class="white-text">Settings</h5><ul><li><a class="white-text" href="#!">Link 1</a></li><li><a class="white-text" href="#!">Link 2</a></li><li><a class="white-text" href="#!">Link 3</a></li><li><a class="white-text" href="#!">Link 4</a></li></ul></div><div class="col l3 s12"><h5 class="white-text">Connect</h5><ul><li><a class="white-text" href="#!">LinkedIn</a></li><li><a class="white-text" href="#!">GitHub</a></li></ul></div></div></div><div class="footer-copyright"><div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a></div></div></footer> -->
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+    <!-- Vendor JS Files -->
+    <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="static/vendor/aos/aos.js"></script>
+    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="static/vendor/php-email-form/validate.js"></script>
+    <!-- Template Main JS File -->
+    <script src="static/js/main.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../static/js/materialize.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
