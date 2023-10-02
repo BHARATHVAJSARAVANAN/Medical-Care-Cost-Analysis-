@@ -67,7 +67,7 @@ Medical costs are one of the most common recurring expenses in a person's life. 
 ## How this project does?
 
 1. First of all download the dataset. 
-Link for dataset : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost/blob/master/insurance%20dataset.csv
+Link for dataset : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost-Analysis-/blob/cd2eff644ea82c4810495a17f04919a5b339e34b/insurance%20dataset.csv
 
 2. Create an IBM account and get accesss to IBM Cognos Analytics and IBM Cloud.
 
@@ -83,13 +83,13 @@ Link for dataset : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost/blob
 
 8. Then a SVR model was built on top of it which had 0.88 R2_score.
 
-   Link for notebook : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost/blob/9dfa6fed23f9143ee8addd6bc1fb70eac5e0fb16/medical_care_cost.py
-
-9. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
+   Link for notebook : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost-Analysis-/blob/cd2eff644ea82c4810495a17f04919a5b339e34b/medical_care_cost.py
+   
+10. This project was given the form of an website built on Flask where we used the Linear Regression model to perform predictions.
 
 ## How to run on your local host?
 
-Prerequisite: Download all files from Github Link : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost
+Prerequisite: Download all files from Github Link : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost-Analysis-
 
 Download PyCharm
 
@@ -113,4 +113,4 @@ Download VScode
    
 4. Now run app.py by writing command --> python app.py
 
-Medical DATASET : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost/blob/master/insurance%20dataset.csv
+Medical DATASET : https://github.com/BHARATHVAJSARAVANAN/Medical-Care-Cost-Analysis-/blob/cd2eff644ea82c4810495a17f04919a5b339e34b/insurance%20dataset.csv
