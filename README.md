@@ -1,6 +1,6 @@
 # Medical Care Cost
 
-Demo Video: https://youtu.be/HEaFU68WAPM
+Demo Video: https://www.linkedin.com/posts/bharathvaj-saravanan-ab21001b4_healthcareanalytics-datascience-ibmproject-activity-7114658051009236992-oeZS?utm_source=share&utm_medium=member_android
 
 # Problem Statement
 
