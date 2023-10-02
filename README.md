@@ -52,7 +52,7 @@ Medical costs are one of the most common recurring expenses in a person's life. 
 
 # Report
 
-<img src="preview/story.png">
+<img src="preview/report.png">
 
 # Contact
 
